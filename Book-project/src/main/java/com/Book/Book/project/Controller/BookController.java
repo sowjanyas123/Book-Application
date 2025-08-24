@@ -27,6 +27,7 @@ public class BookController {
 	public ResponseEntity<Book>  AddBook(@RequestBody Book book){
 		
 		Book addBook = bookService.AddBook(book);
+		System.out.println("changed");
 		return ResponseEntity.ok(addBook);
 		
 	}
